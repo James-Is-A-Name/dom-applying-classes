@@ -8,6 +8,7 @@ function start () {
   one();
   two();
   three();
+  makeVisible();
 }
 
 function one () {
@@ -35,3 +36,9 @@ function three () {
 }
 
 // CREATE FUNCTION makeVisible HERE
+function makeVisible(){
+  var invisibleThings = document.getElementsByClassName("invisible");
+
+  invisibleThings[0].classList.remove('invisible');
+  invisibleThings[0].classList.add('visible');
+}
