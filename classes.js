@@ -7,7 +7,7 @@ function start () {
   // The first example is done for you. Uncomment the line below and reload the browser.
   one();
   two();
-  // Your turn! Create a new function called `two`, then call it from here.
+  three();
 }
 
 function one () {
@@ -27,5 +27,11 @@ function two () {
 }
 
 // CREATE FUNCTION three HERE
+function three () {
+  // Change the comment to try hide the copy pasting
+  var three = document.getElementById('three');
+
+  three.classList.toggle('orange');
+}
 
 // CREATE FUNCTION makeVisible HERE
